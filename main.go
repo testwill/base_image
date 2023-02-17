@@ -20,6 +20,7 @@ func main() {
 	fmt.Println(srcName)
 	ctx := context.Background()
 	cliOpt := flag2.Options{}
+	cliOpt.ListAllPkgs = true
 	dbOpt := flag2.DBOptions{}
 	dbOpt.SkipDBUpdate = true
 	cliOpt.Target = srcName
