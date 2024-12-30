@@ -15,7 +15,7 @@ func main() {
 	var (
 		srcName string
 	)
-	flag.StringVar(&srcName, "image", "", "镜像名")
+	flag.StringVar(&srcName, "image", "", "image name")
 	flag.Parse()
 	fmt.Println(srcName)
 	ctx := context.Background()
